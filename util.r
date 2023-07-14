@@ -151,7 +151,7 @@ calcDist <- function(x1, x2, y1, y2, fastMode = TRUE) {
 
 
 ################################################################################
-# General purplose functions
+# General purpose functions
 
 normalize <- \(x) (x - min(x)) / (max(x) - min(x))
 
