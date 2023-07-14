@@ -6,6 +6,9 @@
 .RData
 .RDataTmp
 
+# Scribbles
+test.r
+
 # User-specific files
 .Ruserdata
 
@@ -20,6 +23,7 @@
 
 # RStudio files
 .Rproj.user/
+*.Rproj
 
 # produced vignettes
 vignettes/*.html
