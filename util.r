@@ -31,12 +31,6 @@ nbs <- \(m, x, y) {
 calcW <- \(oi, oj, gi, gj, H = 0.6, mu = 0.5) {
   mu * (1 - (2 * ((abs(oj - oi) * H) + (abs(gj - gi) * (1 - H)))))
 }
-#cbind(
-#  seq(0,1,0.2),
-#  round(
-#    digits = 3,
-#    calcW(oi = 0, oj = seq(0,1,0.2), gi = 1, gj = 0, H = 0.6, mu = 1)
-#))
 
 # Generalized version of weight calculation. 
 # mu scales the strength of influence; th sets the opinion distance that
@@ -120,7 +114,6 @@ rleDecoder <- \(pat) {
     )
     pat <- paste0(patStart, expanded, patEnd, collapse = "")
   }
-  
   
   # character "$" signifies end-of-line. Therefore:
   pat <- strsplit(x = pat, split = "\\$")[[1]]
